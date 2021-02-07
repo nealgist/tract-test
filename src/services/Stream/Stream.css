@@ -1,0 +1,66 @@
+/* https://chakra-ui.com/docs/theming/theme */
+
+.str-chat {
+  height: 100%;
+}
+
+.str-chat-channel.messaging
+.str-chat__main-panel {
+  padding: 0!important;
+}
+
+/* Remove emoji action bar — cleaner UI for smaller space. */
+/* TODO: possibly { display:flex; } on large screens would be nice. */
+.str-chat__message-simple__actions {
+  display: none;
+}
+
+/* Remove date heading from top of chat. */
+.str-chat__date-separator {
+  display: none;
+}
+
+/* Hide the (√) to the right of successfully sent messages */
+.str-chat__list,
+.messaging.str-chat .str-chat__list  {
+  padding: 0!important;
+}
+.str-chat__message-simple-status {
+  display: none;
+}
+
+/* Remove big empty whitespace from top of chat */
+.str-chat__reverse-infinite-scroll {
+  padding-top: 0!important;
+  position: absolute;
+  bottom: 3rem;
+  width: 100%;
+}
+
+/* Remove gray background that flickers during load */
+.str-chat.messaging,
+.str-chat.commerce {
+  background: none;
+}
+
+/* Remove dropshadow and hr styles from bottom <input> box */
+.str-chat__input {
+  box-shadow: none;
+  margin-bottom: 1rem;
+}
+
+/* Hides number of people online from bottom under <input> box */
+.str-chat__input-footer {
+  display: none;
+}
+
+/* Hide File Upload and Emoji button icons in the right side of the <input> field */
+.str-chat__fileupload-wrapper,
+.str-chat__emojiselect-wrapper {
+  display: none;
+}
+
+/* Allow messages to stretch to the full width of the container */
+.str-chat__message-inner {
+  margin-left: auto!important;
+}
